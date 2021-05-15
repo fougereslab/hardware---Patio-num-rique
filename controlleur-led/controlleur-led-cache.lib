@@ -1,0 +1,94 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SamacSys_Parts_BU33SD5WG-TR
+#
+DEF SamacSys_Parts_BU33SD5WG-TR PS 0 30 Y Y 1 F N
+F0 "PS" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_BU33SD5WG-TR" 950 200 50 H V L CNN
+F2 "SOT95P280X125-5N" 950 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/BU33SD5WG-TR.pdf" 950 0 50 H I L CNN
+F4 "LDO regulator,3.3V,0.5A,standby,SSOP5 ROHM BU33SD5WG-TR, LDO Voltage Regulator, 0.5A, 3.3 V +/-2%, 1.7  6 Vin, 5-Pin SSOP" 950 -100 50 H I L CNN "Description"
+F5 "1.25" 950 -200 50 H I L CNN "Height"
+F6 "755-BU33SD5WG-TR" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/BU33SD5WG-TR?qs=%2FKR40Cd6GUrQDzRkUEt69Q%3D%3D" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "ROHM Semiconductor" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "BU33SD5WG-TR" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+X VIN 1 0 0 200 R 50 50 0 0 P
+X GND 2 0 -100 200 R 50 50 0 0 P
+X STBY 3 0 -200 200 R 50 50 0 0 P
+X N.C. 4 1100 0 200 L 50 50 0 0 N
+X VOUT 5 1100 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_USB3106-30-0230-A
+#
+DEF SamacSys_Parts_USB3106-30-0230-A J 0 30 Y Y 1 F N
+F0 "J" 850 500 50 H V L CNN
+F1 "SamacSys_Parts_USB3106-30-0230-A" 850 400 50 H V L CNN
+F2 "USB3106300230A" 850 300 50 H I L CNN
+F3 "https://gct.co/files/drawings/usb3106.pdf" 850 200 50 H I L CNN
+F4 "GCT (GLOBAL CONNECTOR TECHNOLOGY) - USB3106-30-0230-A - USB Connector, Micro USB Type AB, USB 2.0, Receptacle, 5 Positions, Through Hole Mount, Vertical" 850 100 50 H I L CNN "Description"
+F5 "5" 850 0 50 H I L CNN "Height"
+F6 "GCT (GLOBAL CONNECTOR TECHNOLOGY)" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "USB3106-30-0230-A" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 300 800 300 800 -300 200 -300 200 300 N
+X 1 1 400 500 200 D 50 50 0 0 P
+X 2 2 400 -500 200 U 50 50 0 0 P
+X 3 3 500 500 200 D 50 50 0 0 P
+X 4 4 500 -500 200 U 50 50 0 0 P
+X 5 5 600 500 200 D 50 50 0 0 P
+X MH1 MH1 0 0 200 R 50 50 0 0 P
+X MH2 MH2 1000 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

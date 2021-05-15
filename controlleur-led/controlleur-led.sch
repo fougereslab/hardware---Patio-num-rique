@@ -1,0 +1,180 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1300 850  0    197  ~ 0
+Alimentation
+$Comp
+L power:VCC #PWR?
+U 1 1 607B1AA2
+P 1150 1350
+F 0 "#PWR?" H 1150 1200 50  0001 C CNN
+F 1 "VCC" H 1165 1523 50  0000 C CNN
+F 2 "" H 1150 1350 50  0001 C CNN
+F 3 "" H 1150 1350 50  0001 C CNN
+	1    1150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607B2C8C
+P 1400 2150
+F 0 "#PWR?" H 1400 1900 50  0001 C CNN
+F 1 "GND" H 1405 1977 50  0000 C CNN
+F 2 "" H 1400 2150 50  0001 C CNN
+F 3 "" H 1400 2150 50  0001 C CNN
+	1    1400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1350 1150 1750
+Wire Wire Line
+	1150 1750 1800 1750
+$Comp
+L SamacSys_Parts:BU33SD5WG-TR PS?
+U 1 1 607AF9DE
+P 1800 1750
+F 0 "PS?" H 2350 2015 50  0000 C CNN
+F 1 "BU33SD5WG-TR" H 2350 1924 50  0000 C CNN
+F 2 "SOT95P280X125-5N" H 2750 1850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/BU33SD5WG-TR.pdf" H 2750 1750 50  0001 L CNN
+F 4 "LDO regulator,3.3V,0.5A,standby,SSOP5 ROHM BU33SD5WG-TR, LDO Voltage Regulator, 0.5A, 3.3 V +/-2%, 1.7  6 Vin, 5-Pin SSOP" H 2750 1650 50  0001 L CNN "Description"
+F 5 "1.25" H 2750 1550 50  0001 L CNN "Height"
+F 6 "755-BU33SD5WG-TR" H 2750 1450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/BU33SD5WG-TR?qs=%2FKR40Cd6GUrQDzRkUEt69Q%3D%3D" H 2750 1350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ROHM Semiconductor" H 2750 1250 50  0001 L CNN "Manufacturer_Name"
+F 9 "BU33SD5WG-TR" H 2750 1150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1850 1800 1850
+Wire Wire Line
+	1400 1850 1400 2150
+Wire Wire Line
+	1800 1950 1150 1950
+Wire Wire Line
+	1150 1950 1150 1750
+Connection ~ 1150 1750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 607BF60F
+P 3450 1250
+F 0 "#PWR?" H 3450 1100 50  0001 C CNN
+F 1 "+3.3V" H 3465 1423 50  0000 C CNN
+F 2 "" H 3450 1250 50  0001 C CNN
+F 3 "" H 3450 1250 50  0001 C CNN
+	1    3450 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1250 3450 1850
+Wire Wire Line
+	3450 1850 2900 1850
+Wire Wire Line
+	3950 600  3950 2750
+Wire Wire Line
+	3950 2750 500  2750
+Text Notes 7650 1000 0    197  ~ 0
+Connecteur USB
+$Comp
+L power:VCC #PWR?
+U 1 1 607C6E7E
+P 8700 1350
+F 0 "#PWR?" H 8700 1200 50  0001 C CNN
+F 1 "VCC" H 8715 1523 50  0000 C CNN
+F 2 "" H 8700 1350 50  0001 C CNN
+F 3 "" H 8700 1350 50  0001 C CNN
+	1    8700 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1350 8700 1600
+Text GLabel 8800 1500 1    59   Input ~ 0
+D+
+Wire Wire Line
+	8800 1600 8800 1500
+Text GLabel 8700 2800 3    59   Input ~ 0
+D-
+Wire Wire Line
+	8700 2600 8700 2800
+$Comp
+L SamacSys_Parts:USB3106-30-0230-A J1
+U 1 1 607C2C6A
+P 8300 2100
+F 0 "J1" H 8750 2100 50  0000 L CNN
+F 1 "USB3106-30-0230-A" H 7600 2350 50  0001 L CNN
+F 2 "USB3106300230A" H 9150 2400 50  0001 L CNN
+F 3 "https://gct.co/files/drawings/usb3106.pdf" H 9150 2300 50  0001 L CNN
+F 4 "GCT (GLOBAL CONNECTOR TECHNOLOGY) - USB3106-30-0230-A - USB Connector, Micro USB Type AB, USB 2.0, Receptacle, 5 Positions, Through Hole Mount, Vertical" H 9150 2200 50  0001 L CNN "Description"
+F 5 "5" H 9150 2100 50  0001 L CNN "Height"
+F 6 "" H 9150 2000 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 9150 1900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GCT (GLOBAL CONNECTOR TECHNOLOGY)" H 9150 1800 50  0001 L CNN "Manufacturer_Name"
+F 9 "USB3106-30-0230-A" H 9150 1700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607E1213
+P 9100 1550
+F 0 "#PWR?" H 9100 1300 50  0001 C CNN
+F 1 "GND" H 9105 1377 50  0000 C CNN
+F 2 "" H 9100 1550 50  0001 C CNN
+F 3 "" H 9100 1550 50  0001 C CNN
+	1    9100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607E48E1
+P 9450 2250
+F 0 "#PWR?" H 9450 2000 50  0001 C CNN
+F 1 "GND" H 9455 2077 50  0000 C CNN
+F 2 "" H 9450 2250 50  0001 C CNN
+F 3 "" H 9450 2250 50  0001 C CNN
+	1    9450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607E558F
+P 8150 2250
+F 0 "#PWR?" H 8150 2000 50  0001 C CNN
+F 1 "GND" H 8155 2077 50  0000 C CNN
+F 2 "" H 8150 2250 50  0001 C CNN
+F 3 "" H 8150 2250 50  0001 C CNN
+	1    8150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2250 8150 2100
+Wire Wire Line
+	8150 2100 8300 2100
+Wire Wire Line
+	9300 2100 9450 2100
+Wire Wire Line
+	9450 2100 9450 2250
+Wire Wire Line
+	9100 1550 9100 1450
+Wire Wire Line
+	9100 1450 8900 1450
+Wire Wire Line
+	8900 1450 8900 1600
+Wire Wire Line
+	7150 500  7150 3400
+Wire Wire Line
+	7150 3400 11100 3400
+$EndSCHEMATC
